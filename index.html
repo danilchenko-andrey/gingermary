@@ -31,16 +31,16 @@
         <noscript><div><img src="https://mc.yandex.ru/watch/41398489" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
        
-        <meta http-equiv="refresh" content="3;url=https://vk.com/gingermary">
+<!--         <meta http-equiv="refresh" content="3;url=https://vk.com/gingermary"> -->
         <script type="text/javascript">
-            window.onload = function() {
+            var redirect_code = function() {
                 console.log('redirect');
                 window.location.href = "https://vk.com/gingermary";
             }
         </script>
         <title>Page Redirection</title>
     </head>
-    <body>
+    <body onload=redirect_code()>
         If you are not redirected automatically, follow the <a href='https://vk.com/gingermary'>https://vk.com/gingermary</a>
     </body>
 </html>
